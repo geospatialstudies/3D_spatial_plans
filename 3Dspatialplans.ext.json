@@ -3,7 +3,7 @@
     "type": "CityJSONExtension",
     "name": "3DSpatialPlan",
     "description": "Extension for 3D spatial plans",
-    "url": "https://raw.githubusercontent.com/geospatialstudies/3DValuation/main/extension/3Dvaluation.ext.json",
+    "url": "https://raw.githubusercontent.com/geospatialstudies/3D_spatial_plans/refs/heads/main/3Dspatialplans.ext.json",
     "version": "1.0",
     "extraAttributes": {},
     "versionCityJSON": "2.0",
