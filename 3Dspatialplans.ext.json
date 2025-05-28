@@ -1,0 +1,116 @@
+
+{
+    "type": "CityJSONExtension",
+    "name": "3DSpatialPlan",
+    "description": "Extension for 3D spatial plans",
+    "url": "https://raw.githubusercontent.com/geospatialstudies/3DValuation/main/extension/3Dvaluation.ext.json",
+    "version": "1.0",
+    "extraAttributes": {},
+    "versionCityJSON": "2.0",
+
+    "extraCityObjects":
+    {
+        "+BP_UeberbaubareGrundstuecksFlaeche":
+        {
+            "allOf": [
+                {
+                    "$ref": "cityobjects.schema.json#/_AbstractCityObject"
+                },
+                {
+                    "properties":
+                    {
+                        "type":
+                        {
+                            "enum": [
+                                "+BP_UeberbaubareGrundstuecksFlaeche"
+                            ]
+                        },
+                        "attributes":
+                        {
+                            "type": "object",
+                            "properties":
+                            {
+                                "bauweise":
+                                {
+                                    "type": "integer"
+                                },
+                                "bauweiseText":
+                                {
+                                    "type": "string"
+                                },
+                                "h":
+                                {
+                                    "type": "number"
+                                },
+                                "h_uom":
+                                {
+                                    "type": "string"
+                                },
+                                "Z":
+                                {
+                                    "type": "integer"
+                                },
+                                "Zmin":
+                                {
+                                    "type": "integer"
+                                },
+                                "Zmax":
+                                {
+                                    "type": "integer"
+                                },
+                                "ZUmin":
+                                {
+                                    "type": "integer"
+                                },
+                                "ZUmax":
+                                {
+                                    "type": "integer"
+                                },
+                                "ZU":
+                                {
+                                    "type": "integer"
+                                }
+                            }
+                        },
+                        "geometry":
+                        {
+                            "type": "array",
+                            "items":
+                            {
+                                "oneOf": [
+                                    {
+                                        "$ref": "geomprimitives.schema.json#/MultiLineString"
+                                    },
+                                    {
+                                        "$ref": "geomprimitives.schema.json#/MultiSurface"
+                                    },
+                                    {
+                                        "$ref": "geomprimitives.schema.json#/CompositeSurface"
+                                    },
+                                    {
+                                        "$ref": "geomprimitives.schema.json#/Solid"
+                                    },
+                                    {
+                                        "$ref": "geomprimitives.schema.json#/CompositeSolid"
+                                    },
+                                    {
+                                        "$ref": "geomprimitives.schema.json#/MultiSolid"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "required": [
+
+                        "type",
+                        "geometry"
+                    ]
+                }
+            ]
+	}}
+
+    "extraRootProperties": {},
+
+    "extraSemanticSurfaces": {}
+
+}
