@@ -5,8 +5,48 @@
     "description": "Extension for 3D spatial plans",
     "url": "https://raw.githubusercontent.com/geospatialstudies/3D_spatial_plans/refs/heads/main/3Dspatialplans.ext.json",
     "version": "1.0",
-    "extraAttributes": {},
+
     "versionCityJSON": "2.0",
+    "extraAttributes":
+    {
+
+        "BuildingUnit":
+        {
+            "+h":
+            {
+                "type": "number"
+            },
+            "+h_uom":
+            {
+                "type": "string"
+            },
+            "+Z":
+            {
+                "type": "integer"
+            },
+            "+Zmin":
+            {
+                "type": "integer"
+            },
+            "+Zmax":
+            {
+                "type": "integer"
+            },
+            "+ZUmin":
+            {
+                "type": "integer"
+            },
+            "+ZUmax":
+            {
+                "type": "integer"
+            },
+            "+ZU":
+            {
+                "type": "integer"
+            }
+        }
+
+    },
 
     "extraCityObjects":
     {
@@ -107,7 +147,8 @@
                     ]
                 }
             ]
-	}},
+        }
+    },
 
     "extraRootProperties": {},
 
