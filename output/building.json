@@ -386,5 +386,12 @@
     {
         "scale": [0.001, 0.001, 0.001],
         "translate": [567440.979374704, 5937627.699966214, 0.013]
+    },"extensions":
+    {
+        "3DSpatialPlan":
+        {
+            "url": "https://raw.githubusercontent.com/geospatialstudies/3D_spatial_plans/refs/heads/main/3Dspatialplans.ext.json",
+            "version": "2.0"
+        }
     }
 }
